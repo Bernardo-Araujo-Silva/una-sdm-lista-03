@@ -1,0 +1,48 @@
+Parte 1 – Analogia
+
+HTTP: funciona como o manual de comunicação do restaurante. Ele define como o cliente deve fazer o pedido, como o garçom deve levá-lo até a cozinha e quais respostas podem ser dadas.
+
+API: funciona como o cardápio do restaurante. O cliente não entra na cozinha diretamente, mas escolhe os itens disponíveis no cardápio e faz o pedido através do garçom.
+
+JSON: funciona como a comanda do restaurante, onde o pedido é anotado em um formato padronizado para que todos consigam entender.
+
+
+Parte 2
+
+1. Verbo HTTP
+
+Resposta: POST
+
+Explicação: O método POST é utilizado para enviar dados ao servidor e criar novos recursos. No caso da biblioteca, ele seria utilizado para cadastrar um novo livro no sistema.
+
+
+2. JSON
+
+Errado:
+
+{
+"titulo": "Sistemas Distribuídos",
+"autor": "Andrew Tanenbaum"
+"edicao" 4,
+"disponivel": true
+}
+
+Correto:
+
+{
+  "titulo": "Sistemas Distribuídos",
+  "autor": "Andrew Tanenbaum",
+  "edicao": 4,
+  "disponivel": true
+}
+
+
+3. Status HTTP
+
+Resposta: 404 Not Found
+
+
+Parte 3 – Discursiva
+
+A API deve retornar o erro 500 Internal Server Error. Isso ocorre porque o problema não está na requisição do cliente, mas sim em uma falha interna do servidor, já que  o banco 
+de dados está indisponível. Em sistemas distribuídos é importante indicar corretamente quando ocorre uma falha interna para facilitar o diagnóstico e a transparência de erros.
